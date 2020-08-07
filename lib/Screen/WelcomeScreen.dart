@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:The_Mindfulness/Components/rounded_button.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'RegistrationScreen.dart';
+import 'LoginScreen.dart';
 
 class WelcomeScreen extends StatefulWidget {
 
@@ -65,7 +67,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     right:ScreenUtil().setWidth(70)),
                 child: RoundedButton(title: 'Login',
                   onPressed: (){
-                  //  Navigator.pushNamed(context, LoginScreen.id);
+                   Navigator.pushNamed(context, LoginScreen.id);
                   },
                   colour: Colors.lightBlue,),
               ),
@@ -78,7 +80,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     InkWell(
                       child: Text("Register here", style: TextStyle(color: Colors.lightBlue,fontWeight:FontWeight.w800),),
                       onTap: (){
-                   //    Navigator.pushNamed(context, RegistrationScreen.id);
+                      Navigator.pushNamed(context, RegistrationScreen.id);
                       },
 
                     ),

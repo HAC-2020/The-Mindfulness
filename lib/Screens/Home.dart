@@ -1,5 +1,10 @@
 import 'package:The_Mindfulness/Class/CustomCard.dart';
-import 'package:The_Mindfulness/Screens/Music.dart';
+import 'package:The_Mindfulness/Screens/Breathe.dart';
+import 'package:The_Mindfulness/Screens/Focusing.dart';
+import 'package:The_Mindfulness/Screens/Happiness.dart';
+import 'package:The_Mindfulness/Screens/Relax.dart';
+import 'package:The_Mindfulness/Screens/SelfLove.dart';
+import 'package:The_Mindfulness/Screens/Tips.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -21,24 +26,24 @@ class _HomeState extends State<Home> {
             Expanded(
               child: Row(
                 children: <Widget>[
-                  CustomCard(text: Text("Relax"), screenToStart: Music(),),
-                  CustomCard(text: Text("Breathe"), screenToStart: Music(),),
+                  CustomCard(text: Text("Relax"), screenToStart: Relax(),),
+                  CustomCard(text: Text("Breathe"), screenToStart: Breathe(),),
                 ],
               ),
             ),
             Expanded(
               child: Row(
                 children: <Widget>[
-                  CustomCard(text: Text("Focus"), screenToStart: Music(),),
-                  CustomCard(text: Text("Happiness"), screenToStart: Music(),),
+                  CustomCard(text: Text("Focus"), screenToStart: Focusing(),),
+                  CustomCard(text: Text("Happiness"), screenToStart: Happiness(),),
                 ],
               ),
             ),
             Expanded(
               child: Row(
                 children: <Widget>[
-                  CustomCard(text: Text("Self Love"), screenToStart: Music(),),
-                  CustomCard(text: Text("Tips"), screenToStart: Music(),),
+                  CustomCard(text: Text("Self Love"), screenToStart: SelfLove(),),
+                  CustomCard(text: Text("Tips"), screenToStart: Tips(),),
                 ],
               ),
             ),

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class Music extends StatelessWidget {
+class Breathe extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Center(child: Text("Music")),
+      child: Center(child: Text("Breathe")),
     );
   }
 }

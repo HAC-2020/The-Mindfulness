@@ -4,6 +4,7 @@ import 'package:The_Mindfulness/Components/assets.dart';
 import 'package:The_Mindfulness/Components/swiper_pagination.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'WelcomeScreen.dart';
 
 
 
@@ -91,7 +92,7 @@ class _IntroSliderState extends State<IntroSlider> {
             textColor: Colors.grey.shade600,
             child: Text("Skip"),
             onPressed: (){
-             // Navigator.of(context).pushReplacementNamed(WelcomeScreen.id);
+              Navigator.of(context).pushReplacementNamed(WelcomeScreen.id);
             },
           ),
           IconButton(
@@ -100,8 +101,8 @@ class _IntroSliderState extends State<IntroSlider> {
               if(_currentIndex < _pageCount - 1)
                 _swiperController.next();
               else {
-                // Navigator.of(context).pushReplacementNamed('challenge_home');
-              //  Navigator.of(context).pushReplacementNamed(WelcomeScreen.id);
+
+                Navigator.of(context).pushReplacementNamed(WelcomeScreen.id);
               }
             },
           )

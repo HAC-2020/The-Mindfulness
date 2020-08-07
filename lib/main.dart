@@ -1,3 +1,4 @@
+import 'package:The_Mindfulness/Screen/WelcomeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:The_Mindfulness/Screen/IntroSlider.dart';
 
@@ -23,6 +24,7 @@ class _MeditationAppState extends State<MeditationApp> {
       initialRoute: IntroSlider.id,
       routes: <String,WidgetBuilder>{
         IntroSlider.id:(BuildContext context)=> IntroSlider(),
+        WelcomeScreen.id:(BuildContext context)=> WelcomeScreen()
 
 
       },

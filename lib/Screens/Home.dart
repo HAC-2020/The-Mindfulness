@@ -1,11 +1,9 @@
 import 'package:The_Mindfulness/Class/CustomCard.dart';
 import 'package:The_Mindfulness/Screens/Breathe.dart';
-import 'package:The_Mindfulness/Screens/Focusing.dart';
-import 'package:The_Mindfulness/Screens/Happiness.dart';
-import 'package:The_Mindfulness/Screens/Relax.dart';
-import 'package:The_Mindfulness/Screens/SelfLove.dart';
+import 'package:The_Mindfulness/Screens/MusicList.dart';
 import 'package:The_Mindfulness/Screens/Tips.dart';
 import 'package:flutter/material.dart';
+import 'package:double_back_to_close_app/double_back_to_close_app.dart';
 
 class Home extends StatefulWidget {
 
@@ -16,6 +14,13 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,24 +31,24 @@ class _HomeState extends State<Home> {
             Expanded(
               child: Row(
                 children: <Widget>[
-                  CustomCard(text: Text("Relax"), screenToStart: Relax(),),
-                  CustomCard(text: Text("Breathe"), screenToStart: Breathe(),),
+                  CustomCard(text: "images/breath.jpg", screenToStart: Breathe(),),
+                  CustomCard(text: "images/calm.jpg", screenToStart: MusicList('music/calm/songs','Calm'),),
                 ],
               ),
             ),
             Expanded(
               child: Row(
                 children: <Widget>[
-                  CustomCard(text: Text("Focus"), screenToStart: Focusing(),),
-                  CustomCard(text: Text("Happiness"), screenToStart: Happiness(),),
+                  CustomCard(text: "images/meditaiton.jpeg", screenToStart: MusicList('music/meditation/songs','Meditatiton'),),
+                  CustomCard(text: "images/hapiness.jpg", screenToStart: MusicList('music/happiness/songs','Happiness'),),
                 ],
               ),
             ),
             Expanded(
               child: Row(
                 children: <Widget>[
-                  CustomCard(text: Text("Self Love"), screenToStart: SelfLove(),),
-                  CustomCard(text: Text("Tips"), screenToStart: Tips(),),
+                  CustomCard(text: "images/selflove.jpg", screenToStart: MusicList('music/selfLove/songs','Self Love'),),
+                  CustomCard(text: "images/tips.jpg", screenToStart: Tips(),),
                 ],
               ),
             ),

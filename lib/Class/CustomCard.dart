@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class CustomCard extends StatelessWidget {
 
-  Text text;
+  String text;
   var screenToStart;
   CustomCard({@required this.text, this.screenToStart});
 
@@ -11,9 +11,10 @@ class CustomCard extends StatelessWidget {
     return Expanded(
       child: FlatButton(
         child: Card(
+          borderOnForeground: true,
           elevation: 10,
           color: Colors.blue[100],
-          child: Center(child: text,),
+          child: Image.asset(text),
           margin: EdgeInsets.symmetric(vertical: 15, horizontal: 0),
         ),
         onPressed: (){

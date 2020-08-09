@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "845779527108-156bt5filao5m8ouaperv36s2lekmeju.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.The_Mindfulness",
+            "certificate_hash": "0a94863299beb32ecfe602cd84004df575d08756"
+          }
+        },
+        {
           "client_id": "845779527108-ta9sot67shocqtb8oi2hpaid24i98vrs.apps.googleusercontent.com",
           "client_type": 3
         }

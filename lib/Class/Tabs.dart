@@ -2,6 +2,7 @@ import 'package:The_Mindfulness/Screens/AddTask.dart';
 import 'package:The_Mindfulness/Screens/Cal.dart';
 import 'package:The_Mindfulness/Screens/Home.dart';
 import 'package:The_Mindfulness/Screens/chatrooms.dart';
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -30,30 +31,30 @@ class _TabsState extends State<Tabs> {
       ),
 
       body: _children[_currentindex],
-      bottomNavigationBar: new TabBar(
-        tabs: [
-          Tab(
-            icon: Icon(Icons.home),
-            text: "Home",
-          ),
-          Tab(
-            icon: Icon(Icons.date_range),
-            text: "Task Planner",
-          ),
-          Tab(
-            icon: Icon(Icons.equalizer),
-            text: "Calendar",
-          ),
-          Tab(
-            icon: Icon(Icons.chat),
-            text: "Chat",
-          ),
+      bottomNavigationBar: CurvedNavigationBar(
+        color:Colors.blue,
+        buttonBackgroundColor: Color(0xFFe6e6e6),
+        //backgroundColor: Color(0xff04033a),
+        backgroundColor:Colors.white,
+        height: 60,
+        animationDuration: Duration(milliseconds: 200),
+        animationCurve: Curves.bounceInOut,
+        index: 0,
+        items:<Widget>[
+
+          Icon(Icons.home,size: 25,color:Colors.black),
+          Icon(Icons.date_range,size: 25,color:Colors.black),
+          Icon(Icons.equalizer,size: 25,color:Colors.black),
+          Icon(Icons.chat,size: 25,color: Colors.black,),
+
         ],
-        labelColor: Colors.white,
-        unselectedLabelColor: Colors.black,
-        indicatorSize: TabBarIndicatorSize.label,
-        indicatorPadding: EdgeInsets.all(5.0),
-        indicatorColor: Colors.black,
+        onTap: (index){
+          print("The current index is $index");
+          setState(() {
+            _currentindex = index;
+          });
+
+        },
       ),
     );
   }

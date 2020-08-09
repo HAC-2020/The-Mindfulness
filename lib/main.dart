@@ -6,6 +6,7 @@ import 'package:The_Mindfulness/Screens/RegistrationScreen.dart';
 import 'package:The_Mindfulness/Screens/WelcomeScreen.dart';
 import 'package:flutter/material.dart';
 
+
 void main() {
   runApp(
     MaterialApp(

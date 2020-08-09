@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-//TODO import 'package:The_Mindfulness/Class/Tabs.dart';
+import 'package:The_Mindfulness/Class/Tabs.dart';
 import 'package:The_Mindfulness/Components/decorations.dart';
 import 'package:The_Mindfulness/Components/rounded_button.dart';
 import "package:The_Mindfulness/helper/helperfunctions.dart";
 import 'package:The_Mindfulness/services/auth.dart';
 import 'package:The_Mindfulness/services/database.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-//import 'package:madicate/ChatModule/chatrooms.dart';
+import 'package:The_Mindfulness/ChatModule/chatrooms.dart';
 
 class DoctorLogin extends StatefulWidget {
   @override
@@ -47,7 +47,7 @@ class _DoctorLoginState extends State<DoctorLogin> {
           HelperFunctions.saveUserEmailSharedPreference(
               userInfoSnapshot.documents[0].data["userEmail"]);
 
-         //TODO Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=>Tabs()), (route) => false);
+          Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=>Tabs()), (route) => false);
         } else {
           setState(() {
             isLoading = false;

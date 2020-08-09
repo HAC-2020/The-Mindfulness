@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// TODO import 'package:The_Mindfulness/Class/Tabs.dart';
+import 'package:The_Mindfulness/Class/Tabs.dart';
 import 'package:The_Mindfulness/Components/GoogleSignInButton.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:The_Mindfulness/Components/rounded_button.dart';
@@ -40,7 +40,7 @@ class _LoginScreenState extends State<LoginScreen> {
 //                  builder: (context) => MeditationApp()
 //              ));
 
-   //TODO Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=>Tabs()), (route) => false);
+    Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=>Tabs()), (route) => false);
 
   }
 

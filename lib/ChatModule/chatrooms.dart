@@ -1,4 +1,4 @@
-import 'package:The_Mindfulness/Screen/WelcomeScreen.dart';
+import 'package:The_Mindfulness/Screens/WelcomeScreen.dart';
 import 'package:The_Mindfulness/helper/authenticate.dart';
 import 'package:The_Mindfulness/helper/constants.dart';
 import 'package:The_Mindfulness/helper/helperfunctions.dart';

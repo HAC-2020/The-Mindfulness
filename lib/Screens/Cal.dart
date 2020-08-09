@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:table_calendar/table_calendar.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:table_calendar/table_calendar.dart';
 
 // Example holidays
 final Map<DateTime, List> _holidays = {

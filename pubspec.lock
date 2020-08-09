@@ -49,22 +49,7 @@ packages:
       name: charcode
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.1.3"
-  cloud_firestore:
-    dependency: "direct main"
-    description:
-      name: cloud_firestore
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.13.7"
-  cloud_firestore_platform_interface:
-    dependency: transitive
-    description:
-      name: cloud_firestore_platform_interface
-      url: "https://pub.dartlang.org"
-    source: hosted
     version: "1.1.2"
-<<<<<<< HEAD
   clock:
     dependency: transitive
     description:
@@ -86,8 +71,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.2"
-=======
->>>>>>> 366fcb16ee5d6ac14e9ef03f8791fd88595b5800
   cloud_firestore_web:
     dependency: transitive
     description:
@@ -123,8 +106,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.1.3"
-<<<<<<< HEAD
-=======
   curved_navigation_bar:
     dependency: "direct main"
     description:
@@ -132,15 +113,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.3.3"
-  double_back_to_close_app:
-    dependency: "direct main"
-    description:
-      name: double_back_to_close_app
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.2.0"
-
->>>>>>> 366fcb16ee5d6ac14e9ef03f8791fd88595b5800
   file:
     dependency: transitive
     description:
@@ -216,7 +188,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.4.1"
-<<<<<<< HEAD
   flutter_page_indicator:
     dependency: transitive
     description:
@@ -238,10 +209,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.6"
-=======
-
->>>> dev
->>>>>>> 366fcb16ee5d6ac14e9ef03f8791fd88595b5800
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -300,11 +267,7 @@ packages:
       name: image
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "2.1.4"
-=======
-    version: "2.1.12"
->>>>>>> 366fcb16ee5d6ac14e9ef03f8791fd88595b5800
   intl:
     dependency: transitive
     description:
@@ -416,7 +379,6 @@ packages:
       name: quiver
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "2.0.5"
   rxdart:
     dependency: transitive
@@ -425,8 +387,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.24.1"
-=======
-    version: "2.1.3"
   shared_preferences:
     dependency: "direct main"
     description:
@@ -462,7 +422,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.1.2+7"
->>>>>>> 366fcb16ee5d6ac14e9ef03f8791fd88595b5800
+  simple_gesture_detector:
+    dependency: transitive
+    description:
+      name: simple_gesture_detector
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.4"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -517,6 +483,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.2.0"
+  table_calendar:
+    dependency: "direct main"
+    description:
+      name: table_calendar
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.2.3"
   term_glyph:
     dependency: transitive
     description:

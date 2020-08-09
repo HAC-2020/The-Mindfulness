@@ -3,7 +3,6 @@ import 'package:The_Mindfulness/Screens/Breathe.dart';
 import 'package:The_Mindfulness/Screens/MusicList.dart';
 import 'package:The_Mindfulness/Screens/Tips.dart';
 import 'package:flutter/material.dart';
-import 'package:double_back_to_close_app/double_back_to_close_app.dart';
 
 class Home extends StatefulWidget {
 

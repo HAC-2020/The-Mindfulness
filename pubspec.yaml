@@ -30,16 +30,6 @@ dependencies:
   cupertino_icons: ^0.1.3
   firebase_core: ^0.4.5
   firebase: ^7.3.0
-<<<<<<< HEAD
-  
-=======
-  flutter_screenutil: ^1.1.0
-  table_calendar: ^2.2.3
-
-  cloud_firestore:
-  music_player:
-  curved_navigation_bar: 0.3.3
-  double_back_to_close_app:
   firebase_database:
   cached_network_image:
   font_awesome_flutter:
@@ -49,8 +39,10 @@ dependencies:
   animated_text_kit:
   firebase_auth:
   google_sign_in:
+  table_calendar: ^2.2.3
+  curved_navigation_bar: 0.3.3
+  music_player:
 
->>>>>>> 366fcb16ee5d6ac14e9ef03f8791fd88595b5800
 dev_dependencies:
   flutter_test:
     sdk: flutter

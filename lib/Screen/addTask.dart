@@ -24,6 +24,50 @@ double h = ScreenUtil().setHeight(0);
 
 class _AddtskState extends State<Addtsk> {
   @override
+  void initState() {
+    super.initState();
+    double h = ScreenUtil().setHeight(0);
+    double _doubleyourTime =
+        time2.hour.toDouble() + (time2.minute.toDouble() / 60);
+    double _doubleNowTime =
+        time.hour.toDouble() + (time.minute.toDouble() / 60);
+
+    double _timeDiff = _doubleyourTime - _doubleNowTime;
+
+    _hr = _timeDiff.truncate();
+    _minute = ((_timeDiff - _timeDiff.truncate()) * 60).toDouble();
+  }
+
+  bool validateAndSave() {
+    final form = _formKey.currentState;
+    print(_minute);
+    print(_hr);
+    if (_hr >= 0 && _minute > 0) {
+      if (form.validate()) {
+        form.save();
+        //createRecord();
+        // Navigator.push(context, MaterialPageRoute(builder: (context) => Secondpage()));
+        setState(() {
+          h = ScreenUtil().setHeight(0);
+        });
+
+        return true;
+      } else {
+        setState(() {
+          h = ScreenUtil().setHeight(50);
+        });
+
+        return false;
+      }
+    } else {
+      print("Data lost");
+    }
+  }
+
+  // DateTime selectedDate = DateTime.now();
+  // TimeOfDay time = new TimeOfDay.now();
+  // TimeOfDay time2 = new TimeOfDay.now();
+  // TimeOfDay t;
 
   Future<Null> _selectDate(BuildContext context) async {
     final DateTime picked = await showDatePicker(
@@ -271,7 +315,7 @@ class _AddtskState extends State<Addtsk> {
                               borderRadius: new BorderRadius.circular(200.0),
                               side: BorderSide(color: Colors.blue)),
                           onPressed: () {
-                            Null;
+                            validateAndSave();
                           },
                           child: Text(
                             "Add task",

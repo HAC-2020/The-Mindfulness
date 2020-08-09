@@ -35,6 +35,7 @@ packages:
       name: charcode
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< Updated upstream
     version: "1.1.2"
   clock:
     dependency: transitive
@@ -43,6 +44,9 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.1"
+=======
+    version: "1.1.3"
+>>>>>>> Stashed changes
   cloud_firestore:
     dependency: "direct main"
     description:
@@ -92,6 +96,7 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.1.3"
+<<<<<<< Updated upstream
   curved_navigation_bar:
     dependency: "direct main"
     description:
@@ -106,6 +111,8 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.2.0"
+=======
+>>>>>>> Stashed changes
   file:
     dependency: transitive
     description:
@@ -183,7 +190,11 @@ packages:
       name: image
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< Updated upstream
     version: "2.1.4"
+=======
+    version: "2.1.12"
+>>>>>>> Stashed changes
   intl:
     dependency: transitive
     description:
@@ -226,6 +237,7 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.6.4"
+<<<<<<< Updated upstream
   path_provider:
     dependency: transitive
     description:
@@ -233,6 +245,8 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.6.11"
+=======
+>>>>>>> Stashed changes
   path_provider_linux:
     dependency: transitive
     description:
@@ -240,6 +254,7 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.0.1+2"
+<<<<<<< Updated upstream
   path_provider_macos:
     dependency: transitive
     description:
@@ -247,6 +262,8 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.0.4+3"
+=======
+>>>>>>> Stashed changes
   path_provider_platform_interface:
     dependency: transitive
     description:
@@ -295,6 +312,7 @@ packages:
       name: quiver
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< Updated upstream
     version: "2.0.5"
   rxdart:
     dependency: transitive
@@ -303,6 +321,44 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.24.1"
+=======
+    version: "2.1.3"
+  shared_preferences:
+    dependency: "direct main"
+    description:
+      name: shared_preferences
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.5.8"
+  shared_preferences_linux:
+    dependency: transitive
+    description:
+      name: shared_preferences_linux
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.2+1"
+  shared_preferences_macos:
+    dependency: transitive
+    description:
+      name: shared_preferences_macos
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.1+10"
+  shared_preferences_platform_interface:
+    dependency: transitive
+    description:
+      name: shared_preferences_platform_interface
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.4"
+  shared_preferences_web:
+    dependency: transitive
+    description:
+      name: shared_preferences_web
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.2+7"
+>>>>>>> Stashed changes
   sky_engine:
     dependency: transitive
     description: flutter

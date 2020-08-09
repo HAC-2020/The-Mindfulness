@@ -30,6 +30,7 @@ dependencies:
   firebase_core: ^0.4.5
   firebase: ^7.3.0
   flutter_screenutil: ^1.1.0
+  table_calendar: ^2.2.3
 
 dev_dependencies:
   flutter_test:

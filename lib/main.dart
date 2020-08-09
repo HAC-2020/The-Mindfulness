@@ -1,21 +1,21 @@
+import 'package:The_Mindfulness/Class/Tabs.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
 
-class MyApp extends StatefulWidget {
-  @override
-  _MyAppState createState() => _MyAppState();
+void main() {
+  runApp(
+    MaterialApp(
+      initialRoute: '/tabs',
+      routes: {
+        '/tabs': (context) => defaultTabController(),
+      },
+    )
+  );
 }
 
-class _MyAppState extends State<MyApp> {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      builder: (context, child) => MediaQuery(
-          data: MediaQuery.of(context).copyWith(alwaysUse24HourFormat: true),
-          child: child),
-      debugShowCheckedModeBanner: false,
-      home: null,
-    );
-  }
+DefaultTabController defaultTabController() {
+  return DefaultTabController(
+    length: 4,
+    child: Tabs(),
+  );
 }
